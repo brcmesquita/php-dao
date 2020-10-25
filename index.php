@@ -30,7 +30,13 @@ require_once("config.php");
 // $aluno->insert();
 // echo $aluno;
 
-// Update
+// Update - alterar um usuário
+// $usuario = new Usuario();
+// $usuario->loadById(8);
+// $usuario->update("mesquita", "mesquita123");
+
+// Delete - apagar um usuário
 $usuario = new Usuario();
-$usuario->loadById(8);
-$usuario->update("mesquita", "mesquita123");
+$usuario->loadById(5);
+$usuario->delete();
+echo $usuario;
